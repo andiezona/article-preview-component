@@ -1,36 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/856a073834.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+
   <title>Frontend Mentor | Article preview component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
+  <div class="wrapper">
+    <div class="main-container">
+      <div class="container-left">
+        <img src="images/drawers.jpg" alt="drawers" class="container-left-img">
+      </div>
+      <div class="container-right">
 
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
+        <p class="main-text">
+          Shift the overall look and feel by adding these wonderful
+          touches to furniture in your home
+        </p>
 
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
+        <p class="sub-text">
+          Ever been in a room and felt like something was missing? Perhaps
+          it felt slightly bare and uninviting. I’ve got some simple tips
+          to help you make any room feel complete.
+        </p>
 
-  Michelle Appleton
-  28 Jun 2020
+        <div class="article-details">
+          <div class="author-info">
+            <img src="images/avatar-michelle.jpg" alt="Michelle's avatar image" class="avatar-img">
+            <div class="name-date">
+              <div class="name"> Michelle Appleton</div>
+              <div class="date">28 Jun 2020 </div>
+            </div>
+          </div>
 
-  Share
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+          <div class="share-button">
+            <a href="#">
+              <img src="images/icon-share.svg" class="arrow-img" alt="arrow">
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13" class="arrow-img"><path fill="#6E8098" d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/></svg> -->
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hidden-div">
+        <div class="speech-bubble">
+          <div class="share-button-details"> <span class="speech-bubble-text">Share</span> <i
+              class="fab fa-facebook-square"></i> <i class="fab fa-twitter"></i> <i class="fab fa-pinterest"></i> </div>
+        </div>
+        <div class="speech-bubble-arrow"></div>
+      </div>
+
+    <div class="hidden-div-mobile">
+        <div class="mobile-share-bar">
+          <div class="share-button-details-mobile"> <span class="sharebar-text-mobile">Share</span> <i
+              class="fab fab-mobile fa-facebook-square"></i> <i class="fab fab fab-mobile fa-twitter"></i> <i
+              class="fab fab fab-mobile fa-pinterest"></i>
+              <div class="mobile-share-button">
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13"><path class="arrow-img-mobile" fill="white" d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/></svg>
+                </a>
+              </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Andie Zona</a>.
+    </div>
+  </footer>
   </div>
 </body>
+
 </html>
